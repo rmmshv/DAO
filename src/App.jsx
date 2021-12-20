@@ -141,7 +141,7 @@ const App = () => {
         setHasClaimedNFT(false);
         console.error("failed to nft balance", error);
       });
-  }, [address]);
+  }, [address, error]);
 
   // If user's wallet is not connected
   if (!address) {
