@@ -330,6 +330,8 @@ const App = () => {
   return (
     <div classname="mint-nft">
       <h1>Mint your free MetanewbiesDAO membership NFT</h1>
+    <p>This NFT will make you an honorable MetanewbiesDAO member.</p>
+    <p>Here we proudly ask dumb questions and get rewarded for it!</p>
       <button
         disabled={isClaiming}
         onClick={() => mintNFT()}
