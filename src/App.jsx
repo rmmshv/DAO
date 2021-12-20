@@ -338,15 +338,4 @@ const App = () => {
       </button>
     </div>
   );
-
-
-  // If user's walllet is connected
-  return (
-    <div className="landing">
-      <h2>wallet successfully beep booped🤖✅</h2>
-      <h1>🚀now buckle up your seatbelt🚀</h1>
-    </div>
-  );
-};
-
 export default App;
