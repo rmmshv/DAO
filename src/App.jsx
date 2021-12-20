@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useWeb3 } from "@3rdweb/hooks";
 import { ThirdwebSDK } from "@3rdweb/sdk";
 import { ethers } from "ethers";
+import nftPic from "./img/newb.jpg";
 
 // Initiate sdk on Rinkeby
 const sdk = new ThirdwebSDK("rinkeby");
@@ -330,13 +331,14 @@ const App = () => {
   return (
     <div classname="mint-nft">
       <h1>Mint your free MetanewbiesDAO membership NFT</h1>
-    <p>This NFT will make you an honorable MetanewbiesDAO member.</p>
-    <p>Here we proudly ask dumb questions and get rewarded for it!</p>
+      <img alt="NFT img" src={nftPic}></img>
+      <p>This NFT will make you an honorable MetanewbiesDAO member.</p>
+      <p>Here we proudly ask dumb questions and get rewarded for it!</p>
       <button
         disabled={isClaiming}
         onClick={() => mintNFT()}
       >
-        {isClaiming ? "Minting..." : "Mint your nft (FREE)"}
+        {isClaiming ? "Minting..." : "Mint your nft"}
       </button>
     </div>
   );
